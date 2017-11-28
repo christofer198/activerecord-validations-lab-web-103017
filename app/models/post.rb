@@ -1,7 +1,7 @@
 class Avalidator < ActiveModel::Validator
   def validate(title)
     arr = ["Won't Believe", "Secret", "Top", "Guess"]
-    unless title.include?(arr)
+    unless title.include?(arr) == title
       record.errors[:name] << 'Need a name starting with X please!'
     end
   end

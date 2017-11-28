@@ -1,3 +1,5 @@
+class Avalidator < ActiveRecord:Validations
+
 class Post < ActiveRecord::Base
 
   validates_inclusion_of :title, in: %w(Won't\ Believe Secret Top Guess)

@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
 
 
   def is_clickbait?
-    if /Won't Believe/.match(title) != true
+    if /Won't/.match(title) != true
       errors.add(:title, "There was not a match")
     end
   end

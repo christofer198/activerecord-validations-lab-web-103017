@@ -1,4 +1,4 @@
-class Avalidator < ActiveModel::Validators
+class Avalidator < ActiveModel::Validator
   def validate(title)
     arr = ["Won't Believe", "Secret", "Top", "Guess"]
     unless title.include?(arr)

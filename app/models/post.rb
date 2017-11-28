@@ -1,4 +1,4 @@
-class Avalidator < ActiveRecord:Validations
+class Avalidator < ActiveModel::Validators
 
 class Post < ActiveRecord::Base
 

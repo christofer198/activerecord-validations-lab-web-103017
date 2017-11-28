@@ -1,4 +1,8 @@
 class Avalidator < ActiveModel::Validators
+  def validate(title)
+    arr = ["Won't Believe", "Secret", "Top", "Guess"]
+    unless title.include?()
+end
 
 class Post < ActiveRecord::Base
 
